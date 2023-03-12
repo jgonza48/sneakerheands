@@ -1,3 +1,6 @@
+//This function makes a call to the sneakerheads api using javascript fetch
+//upon submitting the form, the function is called
+
 function getSH() {
     let numberSH = document.getElementById('number').value;
 
@@ -19,7 +22,7 @@ function getSH() {
             Object.entries(data).forEach(([key, value]) => {
 
                 console.log(`${key}: ${value}`);
-                // if (key == "description") {
+                // if (key == "description") { // I do not need this  data
                 //     result += `<span><strong></strong></span>`
                 // }
                 if (key == "image") {
@@ -31,19 +34,20 @@ function getSH() {
                 }
                 if (key == "attributes") {
 
-                    result += `<table><tr><th>Sneaker Number</th><th>Background</th><th>Pin</th><th>Lace</th><th>Level</th></tr><tr>`
-                    value.forEach((att) => {
-                        result += `<td>${att.value}</td>`;
+                    result += `<table><tr>` //Start table and head row
+                    value.forEach((attr) => {
+                        result += `<th>${attr.trait_type}</th>`; // add trait_type as column headings row
                     })
-                    result += `</tr></table>`;
+                    result += `</tr><tr>` // end headings row start data row.
+
+                    value.forEach((att) => {
+                        result += `<td>${att.value}</td>`; // add trait value as data row
+                    })
+                    result += `</tr></table>`; // end row and table
                 }
-
-                result += `</div>`;
-                document.getElementById('result').innerHTML = result;
-
+                result += `</div>`; // close the "card-wrapper" div
+                document.getElementById('result').innerHTML = result; // send to html page
             })
-
-
         })
         .catch(err => console.log('Request Failed', err));
 
