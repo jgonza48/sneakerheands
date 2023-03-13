@@ -12,16 +12,22 @@
 </head>
 
 <body>
-
+    <div class="sidenav">
+        <form method ="GET" onsubmit="return getSH();">
+            <label for="head" id="headlabel"><strong>Please enter a valid NFT number</strong></label><br>
+            <input type="number" min="1" max="5000" id="number" name="head" placeholder="Enter SH number"><br>
+            <input class="button" type="submit" value="Submit">
+        </form> 
+        <!-- <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a> -->
+    </div>
     
     <div class="wrapper" id="wrapper">
         
         <div id="result"></div>
-        <form method ="GET" onsubmit="return getSH();">
-            <label for="head" id="headlabel"><strong>Please enter a valid NFT number</strong></label><br>
-            <input type="text" id="number" name="head" placeholder="Enter SH number"><br>
-            <input class="button" type="submit" value="Submit">
-            </form> 
+        
 
     </div>
 

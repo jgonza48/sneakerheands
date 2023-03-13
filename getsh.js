@@ -1,5 +1,6 @@
 //This function makes a call to the sneakerheads api using javascript fetch
 //upon submitting the form, the function is called
+// this code is intentionally kept simple to follow (I hope)
 
 function getSH() {
     let numberSH = document.getElementById('number').value;
@@ -17,37 +18,35 @@ function getSH() {
         })
         .then((data) => {
 
-            let result = `<div class="card-wrapper" style="display:inline-block;">`;
+            let result = `<div class="card-wrapper">`;
 
             Object.entries(data).forEach(([key, value]) => {
 
-                console.log(`${key}: ${value}`);
-                // if (key == "description") { // I do not need this  data
+                 // if (key == "description") { // I do not need this  data
                 //     result += `<span><strong></strong></span>`
                 // }
                 if (key == "image") {
                     result += `<div class="card">
-                                 <div class="card-img"><img src="${value}" alt="" title=""></div>`;
+                                 <div class="card-img"><img src="${value}" alt="" title="sneakerhead ${numberSH}"></div>`;
                 }
-                if (key == "name") {
-                    result += `<span style="padding:4px;">${value}</span><br>`
+                else if (key == "name") {
+                    result += `<div><span style="padding:4px;">${value}</span><br></div>`
                 }
-                if (key == "attributes") {
+                else if (key == "attributes") {
 
-                    result += `<table><tr>` //Start table and head row
+                    result += `<table>` //Start table and head row
                     value.forEach((attr) => {
-                        result += `<th>${attr.trait_type}</th>`; // add trait_type as column headings row
+                        result += `<tr><td id="tdleft">${attr.trait_type}</td><td id="tdright">${attr.value}</td></tr>`; // add trait_type as column headings row
                     })
-                    result += `</tr><tr>` // end headings row start data row.
 
-                    value.forEach((att) => {
-                        result += `<td>${att.value}</td>`; // add trait value as data row
-                    })
-                    result += `</tr></table>`; // end row and table
+                    
+                    result += `</table></div>`; // end row and table
                 }
-                result += `</div>`; // close the "card-wrapper" div
-                document.getElementById('result').innerHTML = result; // send to html page
             })
+            result += `</div>`; // close the "card-wrapper" div
+            document.getElementById('result').innerHTML += result; // send to html page
+            document.getElementById('number').value = '';
+            console.log(result);
         })
         .catch(err => console.log('Request Failed', err));
 
