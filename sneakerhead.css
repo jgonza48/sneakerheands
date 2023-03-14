@@ -55,7 +55,7 @@ form {
 
 .card-wrapper{
     width: 300px;
-    min-height: 460px;
+    min-height: 470px;
     margin: 0;
     padding: 8px;
     display: inline-block;
@@ -66,7 +66,7 @@ form {
     padding: 0;
     text-align: center;
     width: 100%;
-    min-height: 442px;
+    min-height: 452px;
     border-radius: 12px;
     box-shadow: 0px 0px 15px #888888;
 }
