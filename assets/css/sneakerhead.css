@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
 }
-
+ 
 @font-face {
     font-family: 'MessinaSansMonoWeb-Regular';
-    src: url('../fonts/MessinaSansMonoWeb-Regular.woff') format('woff'),
-         url('../fonts/MessinaSansMonoWeb-Regular.woff2') format('woff2');
+    src: url('../fonts/MessinaSansMono_Web_Regular/MessinaSansMonoWeb-Regular.woff') format('woff'),
+         url('../fonts/MessinaSansMono_Web_Regular/MessinaSansMonoWeb-Regular.woff2') format('woff2');
          font-style: normal;
 }
 
