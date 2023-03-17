@@ -10,7 +10,7 @@ function scrollFunction() {
         button[i].style.padding = "6px";
     }
   } else {
-    document.getElementById("header1").style.fontSize = "4em";
+    document.getElementById("header1").style.fontSize = "3.5em";
     
     for (let i = 0; i < header1.length; i++) {
         button[i].style.padding = "12px";
