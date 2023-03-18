@@ -65,7 +65,6 @@ body {
     color: white;
     width: 300px;
     min-width: 302px;
-    text-align: left;
     padding-left: 20px;
     font-size: 3.5em;
     line-height: 1;
@@ -104,7 +103,7 @@ body {
 
 .wrapper {
     padding: 0;
-    margin: 120px auto;
+    margin: 110px auto;
     width: 90%;
     min-height: 500px;
     display: block;
@@ -246,7 +245,7 @@ ul{
 
   .footer {
     width: 100vw;
-    height: 80px;
+    min-height: 80px;
     position: sticky;
     bottom: 0;
     left:0;
