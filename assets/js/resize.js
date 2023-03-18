@@ -19,8 +19,8 @@ function scrollFunction() {
 
         for (let i = 0; i < header1.length; i++) { 
           button[i].style.padding = "12px";
-          background-color = "initial";
-          background-image = "linear-gradient(-180deg, rgb(60, 136, 187), rgb(16, 52, 107));" 
+          button[i].style.background-color = "initial";
+          button[i].style.background-image = "linear-gradient(-180deg, rgb(60, 136, 187), rgb(16, 52, 107));" 
         }
   }
 }
