@@ -7,7 +7,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) 
   {
     header1.style.fontSize = "2em";
-    header1.style.color = "#000"; /* Fallback for older browsers */
+    header1.style.color = "#fff"; /* Fallback for older browsers */
     header1.style.color = rgba(255, 255, 255, 0.5);
 
     for (let i = 0; i < button.length; i++) { button[i].style.padding = "6px"; }
