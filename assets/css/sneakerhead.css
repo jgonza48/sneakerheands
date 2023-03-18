@@ -214,12 +214,6 @@ ul{
     padding: 0;
 }
 
-#footer1 li{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-
 .fa:hover {
     opacity: 0.7;
   }
@@ -247,7 +241,13 @@ ul{
     width: 140px;
     text-align: center;
     padding-right: 10px;
-}    
+}
+
+#footer1 li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
 
   .footer a {
     padding: 0;
