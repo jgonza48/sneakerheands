@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'MessinaSansMonoWeb-Regular';
+    src: url('../fonts/MessinaSansMono_Web_Regular/MessinaSansMonoWeb-Regular.woff') format('woff'),
+         url('../fonts/MessinaSansMono_Web_Regular/MessinaSansMonoWeb-Regular.woff2') format('woff2');
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'FKScreamerLegacy-Slanted';
+    src: url('../fonts/FK_Screamer/FKScreamerLegacy-Slanted.woff') format('woff'),
+         url('../fonts/FK_Screamer/FKScreamerLegacy-Slanted.woff') format('woff2');
+         font-style: normal;
+}

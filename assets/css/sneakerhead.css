@@ -4,19 +4,6 @@
     padding: 0;
 }
  
-@font-face {
-    font-family: 'MessinaSansMonoWeb-Regular';
-    src: url('../fonts/MessinaSansMono_Web_Regular/MessinaSansMonoWeb-Regular.woff') format('woff'),
-         url('../fonts/MessinaSansMono_Web_Regular/MessinaSansMonoWeb-Regular.woff2') format('woff2');
-         font-style: normal;
-}
-
-@font-face {
-    font-family: 'FKScreamerLegacy-Slanted';
-    src: url('../fonts/FK_Screamer/FKScreamerLegacy-Slanted.woff') format('woff'),
-         url('../fonts/FK_Screamer/FKScreamerLegacy-Slanted.woff') format('woff2');
-         font-style: normal;
-}
 
 html{
     margin: 0;
@@ -76,22 +63,31 @@ body {
     width: 100vw;
 }  
 
-@media screen and (max-width: 860px) {
-
-#header1{
-    width: 100vw;
-    text-align: left;
-    padding: 0;
-    font-size: 2em;
-}
-}
-@media screen and (max-width: 680px) {
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) { 
     div.card-wrapper{
         width: 100%;
-    }
-
-
+    } 
 }
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) { }
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {  }
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    #header1{
+        width: 100vw;
+        text-align: left;
+        padding: 0;
+        font-size: 2em;
+    }
+  }
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {  }
 
 #result{
     margin: 0;
