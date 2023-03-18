@@ -71,23 +71,22 @@ body {
 }
 
 /* Small screen devices (600px and above) */
-@media only screen and (min-width: 600px) { }
+@media only screen and (max-width: 600px) { }
 
 /* Medium screen devices (768px and above) */
-@media only screen and (min-width: 768px) {  }
+@media only screen and (max-width: 768px) {  }
 
 /* Big screen devices (889px and above) */
-@media only screen and (min-width: 889px) {
+@media only screen and (max-width: 889px) {
     #header1{
         width: 100vw;
         text-align: left;
-        padding: 0;
         font-size: 2em;
     }
   }
 
 /* Extra big screen devices (1200px and above) */
-@media only screen and (min-width: 1200px) {  }
+@media only screen and (max-width: 1200px) {  }
 
 #result{
     margin: 0;
