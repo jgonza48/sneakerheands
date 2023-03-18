@@ -26,7 +26,7 @@ body {
 .header {
     width: 100vw;
     position: fixed;
-    min-height: 70px;
+    min-height: 74px;
     top: 0;
     left:0;
     overflow: hidden;
@@ -36,7 +36,7 @@ body {
   }
   
   .header a {
-    padding: 6px 8px 6px 16px;
+    padding: 0;
     text-decoration: none;
     color: #818181;
     display: block;
@@ -229,15 +229,6 @@ ul{
     height:auto;
   }
 
-  #footer1{
-    position: relative;
-    display: inline-block;
-    color: white;
-    width: 140px;
-    text-align: center;
-    padding-right: 10px;
-}    
-
   .footer {
     width: 100vw;
     min-height: 80px;
@@ -249,8 +240,28 @@ ul{
     text-align: center;
   }
 
+  #footer1{
+    position: relative;
+    display: inline-block;
+    color: white;
+    width: 140px;
+    text-align: center;
+    padding-right: 10px;
+}    
+
+  .footer a {
+    padding: 0;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+  }
   
-form {
+  .footer a:hover {
+    color: #f1f1f1;
+  }
+
+  
+.footer form {
     margin: 0;
     display: inline-block;
     width: 400px;
