@@ -65,13 +65,15 @@ body {
 
 /* For extremely small screen devices (595px and below) */
 @media only screen and (max-width: 595px) { 
+   
+}
+
+/* Small screen devices (600px and below) */
+@media only screen and (max-width: 670px) {
     div.card-wrapper{
         width: 100%;
     } 
-}
-
-/* Small screen devices (600px and above) */
-@media only screen and (max-width: 600px) { }
+ }
 
 /* Medium screen devices (768px and above) */
 @media only screen and (max-width: 768px) {  }
